@@ -1,0 +1,97 @@
+/*main style*/
+
+body {
+    background-color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 500vh;
+}
+
+*,
+::after,
+::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+/* colors */
+
+:root {
+    --main-light-blue: #a9b1ea;
+    --hover-nav-blue: #4d4df2;
+    --hover-text-color-blue: #2a3ecb;
+}
+
+
+/*
+.small-container {
+    width: 60%;
+}
+*/
+
+
+/* navbar style*/
+
+nav {
+    height: 100px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    position: fixed;
+    width: 100%;
+    transition: 0.2s all;
+}
+
+nav .container {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+    transition: 0.2s all;
+    padding: 40px;
+}
+
+.sticky {
+    height: 60px;
+    background-color: var(--hover-nav-blue);
+    color: #fff;
+    transition: 0.2s all;
+}
+
+nav img {
+    width: 40px;
+    border-radius: 20%;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+    transition: all 100ms;
+}
+
+nav ul li:hover {
+    color: var(--hover-text-color-blue);
+    border-bottom: 4px solid var(--hover-nav-blue);
+}
+
+.sticky ul li:hover {
+    color: #fff;
+    border-bottom: 4px solid #000;
+}
+
+
+/* header style */
