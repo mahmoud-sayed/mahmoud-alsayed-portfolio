@@ -26,6 +26,8 @@ body {
     --main-light-blue: #a9b1ea;
     --hover-nav-blue: #4d4df2;
     --hover-text-color-blue: #2a3ecb;
+    --black-color: #000;
+    --white-color: #fff;
 }
 
 
@@ -45,6 +47,8 @@ nav {
     align-items: center;
     font-weight: 700;
     position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
     transition: 0.2s all;
 }
@@ -69,6 +73,7 @@ nav .container {
 nav img {
     width: 40px;
     border-radius: 20%;
+    cursor: pointer;
 }
 
 nav ul {
@@ -79,6 +84,7 @@ nav ul {
 }
 
 nav ul li {
+    cursor: pointer;
     margin: 0 20px;
     transition: all 100ms;
 }
@@ -95,3 +101,67 @@ nav ul li:hover {
 
 
 /* header style */
+
+header {
+    margin-top: 100px !important;
+    display: flex;
+    flex-direction: row;
+    background-color: #fff;
+}
+
+header .intro,
+header .photo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    text-shadow: 4px 2px 2px #a7a7d4;
+}
+
+header .intro p {
+    color: #24245e;
+    text-shadow: none;
+}
+
+header .intro h2 {
+    font-size: 60px;
+}
+
+header .intro h2 span {
+    box-shadow: inset 0px -20px 0px #a9b1ea;
+    border-bottom: 3px solid #a9b1ea;
+}
+
+header .intro h1 {
+    font-size: 25;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+header .intro button {
+    width: 150px;
+    padding: 10px 0;
+    margin-top: 20px;
+    background-color: #4d4df2;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 700;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 4px 3px 8px #a7a7d4;
+    transition: 0.1s all;
+}
+
+header .intro button:hover {
+    background-color: #24245e;
+}
+
+header .photo {
+    width: 500px;
+}
+
+
+/* about styling */
+
+.about {}
