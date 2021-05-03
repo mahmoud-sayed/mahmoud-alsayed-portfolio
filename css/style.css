@@ -79,10 +79,6 @@ button:hover {
 
 /* display */
 
-:root {
-    --disktop-display: dis;
-}
-
 
 /*
 .small-container {
@@ -131,6 +127,15 @@ nav ul {
     text-decoration: none;
 }
 
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+}
+
+nav ul li a:hover {
+    color: var(--hover-text-color-blue);
+}
+
 nav ul li {
     cursor: pointer;
     margin: 0 20px;
@@ -147,6 +152,14 @@ nav ul li:hover {
     background-color: var(--hover-nav-blue);
     color: #fff;
     transition: 0.2s all;
+}
+
+.sticky ul li a {
+    color: #fff;
+}
+
+.sticky ul li a:hover {
+    color: #fff;
 }
 
 .sticky ul li:hover {
@@ -297,6 +310,8 @@ header .photo {
 
 /* blog style*/
 
+
+/*
 .blog {
     background-color: #F0F0F0;
     padding: 5em 0;
@@ -308,12 +323,13 @@ header .photo {
     border-bottom: 3px solid #a9b1ea;
     margin-bottom: 5em;
 }
+*/
 
 
 /* contact style */
 
 .contact {
-    background-color: #fff;
+    background-color: #F0F0F0;
     padding: 5em 0;
 }
 
@@ -368,7 +384,7 @@ footer {
     padding: 1rem;
     background: inherit;
     border-radius: 1rem;
-    margin-top: 2rem;
+    padding-top: 2rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
