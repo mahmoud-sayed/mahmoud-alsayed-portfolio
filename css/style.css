@@ -312,7 +312,7 @@ header .photo {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
     transition: 0.3s;
     width: 250px;
-    height: 350px;
+    height: 420px;
     border-radius: 10px;
     overflow: hidden;
     display: flex;
@@ -321,10 +321,13 @@ header .photo {
 
 .cards .card .card-photo {
     height: 60%;
+    border-bottom: 2px solid #222;
+    box-shadow: #1f1f1f;
 }
 
 .portfolio .cards .card .card-photo img {
     width: 100%;
+    margin: 0 auto;
 }
 
 .portfolio .cards .card .card-body {
@@ -332,6 +335,16 @@ header .photo {
     padding: 10px 10px;
     line-height: 2;
     margin-bottom: 15px;
+}
+
+.portfolio .cards .card .card-body p {
+    font-weight: 600;
+}
+
+.portfolio .cards .card .card-body p a {
+    text-decoration: none;
+    font-weight: 700;
+    color: #2a3ecb;
 }
 
 .cards .card:hover {
