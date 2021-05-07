@@ -308,16 +308,29 @@ header .photo {
     flex-wrap: wrap;
 }
 
-.cards .card .card-photo {
-    height: 70%;
-}
-
 .cards .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
     transition: 0.3s;
     width: 250px;
+    height: 350px;
     border-radius: 10px;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.cards .card .card-photo {
+    height: 60%;
+}
+
+.portfolio .cards .card .card-photo img {
+    width: 100%;
+}
+
+.portfolio .cards .card .card-body {
+    height: 40%;
+    padding: 10px 10px;
+    line-height: 2;
 }
 
 .cards .card:hover {
